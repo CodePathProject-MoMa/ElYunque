@@ -4,12 +4,6 @@ An app that classifies any image of fauna and flora!
 Unit 8: Group Milestone - El Yunque README 
 ===
 
-:::info
-**Below is an example** of what your **Group Project README** should include and how it should be structured for the **Unit 8 Group Milestone Submission**.
-:::
-
-# TUNIN
-
 ## Table of Contents
 1. [Overview](#Overview)
 1. [Product Spec](#Product-Spec)
@@ -17,11 +11,12 @@ Unit 8: Group Milestone - El Yunque README
 
 ## Overview
 ### Description
-Tracks what music an individual listens to, and pairs them with others based on that music. Could be potentially used as a dating app, or just meeting new friends with similar music tastes.
+Inspired by a jungle trek in Peru, El Yunque is named after the only rainforest in the United States! This app will let you take a picture of flora and fauna in an area and classify it for you using machine learning! You can drop a pin so that others can go and check out the flora as well! You can share your picture with freinds afterwards. 
+
 
 ### App Evaluation
-- **Category:** Social Networking / Music
-- **Mobile:** This app would be primarily developed for mobile but would perhaps be just as viable on a computer, such as tinder or other similar apps. Functionality wouldn't be limited to mobile devices, however mobile version could potentially have more features.
+- **Category:** Photography / Nature 
+- **Mobile:** This app would primarily be used on mobile because ideally it would be used by someone hiking in a rainforest, or an unfamiliar area, and they would like a quick way to identify a plant. By dropping a pin of the types of plants in the area, you can build a visual "database" of plants within an area, and allow others to do research, cluster plant spieces, or just enjoy the plant! Later on, a UI can be built out for the front end for easy insight and access to the data. Social interactions can also be added, by letting users share thier favorite plants on a timeline or a newsfeed!
 - **Story:** Analyzes users music choices, and connects them to other users with similar choices. The user can then decide to message this person and befriend them if wanted.
 - **Market:** Any individual could choose to use this app, and to keep it a safe environment, people would be organized into age groups.
 - **Habit:** This app could be used as often or unoften as the user wanted depending on how deep their social life is, and what exactly they're looking for.
