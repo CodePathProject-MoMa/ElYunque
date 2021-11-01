@@ -17,61 +17,70 @@ Inspired by a jungle trek in Peru, El Yunque is named after the only rainforest 
 ### App Evaluation
 - **Category:** Photography / Nature 
 - **Mobile:** This app would primarily be used on mobile because ideally it would be used by someone hiking in a rainforest, or an unfamiliar area, and they would like a quick way to identify a plant. By dropping a pin of the types of plants in the area, you can build a visual "database" of plants within an area, and allow others to do research, cluster plant spieces, or just enjoy the plant! Later on, a UI can be built out for the front end for easy insight and access to the data. Social interactions can also be added, by letting users share thier favorite plants on a timeline or a newsfeed!
-- **Story:** Analyzes users music choices, and connects them to other users with similar choices. The user can then decide to message this person and befriend them if wanted.
-- **Market:** Any individual could choose to use this app, and to keep it a safe environment, people would be organized into age groups.
-- **Habit:** This app could be used as often or unoften as the user wanted depending on how deep their social life is, and what exactly they're looking for.
-- **Scope:** First we would start with pairing people based on music taste, then perhaps this could evolve into a music sharing application as well to broaden its usage. Large potential for use with spotify, apple music, or other music streaming applications.
+- **Story:** When a user comes across a plant species they wish to identify, they open the app, and take a picture. After taking the picture, they can identify where they found this plant, and if they want to share it on thier feed. If they dont want to take any pictures, they can just scroll thier feed, or look on the map to see all the different types of flora in the area. 
+- **Market:** Any individual, researcher, scientist, hiker, plant enthusiast 
+- **Habit:** More likely to be used when a user is on a hike, on a trip/vacation, planning for a trip, or planning to go research plants in a specific area. 
+- **Scope:** Start with the camera and classifier identifying plants whenever an image is captured. After this is built out, we can create the map with the ability to drop and share with friends. Then create the home page where you can see the most recent classifications made. Can build this out to include many different plant and flower datasets all over the world. 
+
 
 ## Product Spec
 ### 1. User Stories (Required and Optional)
 
 **Required Must-have Stories**
 
-* User logs in to access previous chats and preference settings
-* User picks what their favorite artist/genre/etc. (Think Spotify interface)
-* Matches have a chat window to get to know each other, with the ability to skip music and unmatch (Tinder Style).
+* User logs in to access home page feed, recent finds across the world, with a banner at the bottom allowing them to choose what to do next (similar to instagram)
+* User clicks on the camera to upload a picture, or select from thier camera roll (similar to instagram)
+* After they identify the image they would like to choose, the ML model classifies the plant species. 
+* They then have an option to use location settings to drop a pin on a map (maybe google maps?) 
+* Also have an option to share it with friends
 * Profile pages for each user
 * Settings (Accesibility, Notification, General, etc.)
 
 **Optional Nice-to-have Stories**
 
-* Log of past songs/people with album art covers matching
-* Page of most played songs (i.e. songs that most users are connecting through)
-* Profile Add-On: Top music choices, etc.
-* Optional Shuffle Button (i.e. random encounter/random song)
-* Listening/Encounter Queue
+* Connect with others who have classified the same plant in the area to see what other plants they've seen or studied 
+* Create a web app for easy discovery of plants in an area. 
+* Page for most popular plant classifed 
+* Screen that uses NLP on the plant description to pull recent and relevant research papers on the plant species 
+
 
 ### 2. Screen Archetypes
 
 * Login 
 * Register - User signs up or logs into their account
-   * Upon Download/Reopening of the application, the user is prompted to log in to gain access to their profile information to be properly matched with another person. 
-   * ...
-* Messaging Screen - Chat for users to communicate (direct 1-on-1)
-   * Upon selecting music choice users matched and message screen opens
-* Profile Screen 
-   * Allows user to upload a photo and fill in information that is interesting to them and others
-* Song Selection Screen.
-   * Allows user to be able to choose their desired song, artist, genre of preference and begin listening and interacting with others.
+   * Upon Download/Reopening of the application, the user is prompted to log in to gain access to their profile information 
+   * After logging in, the landing screen will be the home feed 
+* Landing screen - think instagram for plant species research 
+* Camera Screen - Capture image of plant species to be identified 
+   * User also has the option to select an image from thier camera roll
+* Classifed Image Return Screen
+   * The classified image match gets returned, as well as a description of the plant species. 
+* Map screen
+   * Allows user to drop a pin where they found the plant species, or get to this screen using navigation. 
+   * Have a button to share (to landing screen)
 * Settings Screen
-   * Lets people change language, and app notification settings.
+   * Lets people change language, share, and app notification settings.
 
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
 
-* Music selection
-* Profile
+* Landing Screen 
+* Camera 
+* Map
 * Settings
 
 Optional:
-* Music/Encounter Queue
-* Discover (Top Choices)
+* Discover (Top captured plant species worldwide) 
+* Screen that links to research articles relevant to the plant using NLP 
 
 **Flow Navigation** (Screen to Screen)
 * Forced Log-in -> Account creation if no log in is available
-* Music Selection (Or Queue if Optional) -> Jumps to Chat
-* Profile -> Text field to be modified. 
+* Home screen -> infinite scroll -> click on user profile 
+* Camera -> Take picture
+* Camera -> Choose from camera roll -> allow access? -> View camera roll -> select image 
+* Select photo -> Description of classified plant is returned - Option 1: Share your image to home screen with a caption
+* Select photo -> Description of classified plant is returned - Option 2: Drop a pin on a map -> view map 
 * Settings -> Toggle settings
 
 ## Wireframes
