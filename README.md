@@ -84,4 +84,4 @@ Optional:
 * Settings -> Toggle settings
 
 ## Wireframes
-<img src="![](https://i.imgur.com/01PpAxd.jpg)" width=800><br>
+![](https://i.imgur.com/01PpAxd.jpg)
