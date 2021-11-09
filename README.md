@@ -11,7 +11,7 @@ Unit 8: Group Milestone - El Yunque README
 
 ## Overview
 ### Description
-Inspired by a jungle trek in Peru, El Yunque is named after the only rainforest in the United States! This app will let you take a picture of flora and fauna in an area and classify it for you using machine learning! You can drop a pin so that others can go and check out the flora as well! You can share your picture with freinds afterwards. 
+Inspired by a jungle trek in Peru, El Yunque is named after the only rainforest in the United States! This app will let you take a picture of flora and fauna in an area and classify it for you using machine learning! You can drop a pin so that others can go and check out the flora as well! You can share your picture with friends afterwards. 
 
 
 ### App Evaluation
@@ -85,3 +85,50 @@ Optional:
 
 ## Wireframes
 ![](https://i.imgur.com/01PpAxd.jpg)
+
+
+__________________________________________________________________________________________________________________________________________________________________
+
+## Schema 
+### Models
+#### Post
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ----------- |
+   | image         | File     | picture of the plant that user captures |
+   | author        | Pointer to User | picture author|
+   | imageInfo     | String   | description of the plant captured|
+   | imageName     | String   | name of the plant captured |
+   | createdAt	   | DateTime	| date when picture was captured (default field) |
+  
+   
+   
+   
+### Networking
+#### List of network requests by screen
+   - Landing Screen
+      - (Read/GET) Query all posts where user is author
+      
+    let query = PFQuery(className:"Post")
+          query.whereKey("author", equalTo: currentUser)
+          query.order(byDescending: "createdAt")
+          query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+             if let error = error { 
+                print(error.localizedDescription)
+             } else if let posts = posts {
+                print("Successfully retrieved \(posts.count) posts.")
+            // TODO: Do something with posts...
+             }
+          }
+      
+   - Create New Picture Screen / Camera Screen
+      - (Create/POST) Create a new picture object
+      
+   - Map Screen
+      - (Read/GET) Query after the image posted  
+    
+   - Settings
+      - (Read/GET) Query logged in user object
+      - (Update/PUT) Update user profile image
+     
+    
