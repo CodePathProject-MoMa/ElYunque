@@ -1,3 +1,8 @@
+# Update 11/22 
+Begin coding on 11/30. All issues, user stories, completed activities are up to date. Unfortunately no build progress yet due to midterms, 
+exams and other priorities. Will make substantial updates after 11/30. Should have the app done within 2 weeks afterwards. 
+
+
 # ElYunque
 An app that classifies any image of fauna and flora! 
 
